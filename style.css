@@ -256,37 +256,84 @@ body {
   color: #333;
   margin: 0;
 }
-/* Mobile Responsive Layout */
 @media screen and (max-width: 768px) {
-  .home-flex,
-  .about-flex,
-  .project-grid,
-  .achievement-grid,
-  .internship-grid {
+  /* NAVIGATION */
+  .top-nav ul {
     flex-direction: column;
     align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    overflow-x: hidden;
+  }
+
+  .top-nav a {
+    font-size: 1.1em;
+  }
+
+  /* HEADER FLEX FIX */
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* HOME SECTION */
+  .home-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     text-align: center;
   }
 
   .home-photo img {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
   }
 
-  .header-flex {
-    flex-direction: column;
-    gap: 10px;
+  /* BUTTONS */
+  .action-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  /* ICONS */
+  .icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* SECTION HEADINGS & PADDING */
+  .info-section {
+    padding: 40px 20px;
   }
 
   .achievement-card,
   .project,
   .internship-card {
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .edu-table th,
+  .edu-table td {
+    padding: 10px;
+    font-size: 0.9em;
   }
 
   body {
-    padding: 10px;
+    padding: 0;
+    overflow-x: hidden;
   }
 }
-
-
-
