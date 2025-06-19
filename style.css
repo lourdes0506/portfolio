@@ -346,3 +346,14 @@ p,
 .edu-table td {
   text-align: justify;
 }
+/* Add spacing between paragraphs and blocks */
+.info-section p {
+  margin-bottom: 20px;
+}
+
+.project,
+.internship-card,
+.achievement-card {
+  margin-bottom: 30px;
+}
+
