@@ -337,3 +337,12 @@ body {
     overflow-x: hidden;
   }
 }
+/* Justify content across the site */
+p,
+.project-desc,
+.info-section p,
+.info-section li,
+.home-text p,
+.edu-table td {
+  text-align: justify;
+}
