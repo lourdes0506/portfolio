@@ -256,5 +256,37 @@ body {
   color: #333;
   margin: 0;
 }
+/* Mobile Responsive Layout */
+@media screen and (max-width: 768px) {
+  .home-flex,
+  .about-flex,
+  .project-grid,
+  .achievement-grid,
+  .internship-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-photo img {
+    max-width: 80%;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .achievement-card,
+  .project,
+  .internship-card {
+    width: 90%;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+
 
 
